@@ -1,0 +1,50 @@
+/* .lightTheme {
+    color-scheme: light;
+    --main-color: #fff;
+    --main-bg: #090D1F;
+}
+
+.darkTheme{
+    color-scheme: dark;
+    --main-color: #090D1F;
+    --main-bg: #fff;
+} */
+
+.switcher{
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    gap: 16px;
+    padding: 8px 16px;
+    position: relative;
+    background: var(--textColor);
+    cursor: pointer;
+}
+
+.switcher_icon{
+    width: 22px;
+    fill: var(--main-bg);
+    stroke: var(--main-bg);
+}
+
+.input_switcher{
+    display: none;
+}
+
+.switcher_circle{
+    background: var(--main-bg);
+    border-radius: 100px;
+    width: 24px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 60%;
+    transition: 0.3s all;
+}
+
+.input_switcher:checked + .switcher .switcher_circle{
+    left: 20%;
+}
+
+.input_switcher:checked + .switcher{
+    background: white;
+}

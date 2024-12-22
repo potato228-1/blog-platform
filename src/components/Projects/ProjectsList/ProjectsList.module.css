@@ -1,0 +1,25 @@
+.projectsList{
+    padding: 0 clamp(32px, calc(32px + (112 - 32) * ((100vw - 320px) / (1440 - 320))), 112px);
+}
+
+.projectsList_projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 32px;
+    align-items: stretch;
+}
+
+.projectsList_title{
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 834px) {
+    .projectsList_projects{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}

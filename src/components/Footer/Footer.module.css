@@ -1,0 +1,30 @@
+.footer{
+    padding: 30px clamp(20px, calc(20px + (112 - 20) * ((100vw - 320px) / (1440 - 320))), 112px);
+}
+
+.footer_inner{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer_item{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.links_container{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+@media (max-width: 710px) {
+    .footer_inner{
+        flex-direction: column-reverse;
+    }
+
+    .links_container{
+        flex-direction: column;
+    }
+}

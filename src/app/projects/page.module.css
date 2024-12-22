@@ -1,0 +1,23 @@
+.projects_title {
+	font-size: clamp(
+		3.5rem,
+		calc(56px + (243 - 56) * ((100vw - 320px) / (1440 - 320))),
+		14rem
+	);
+	text-transform: uppercase;
+	text-align: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 60px
+		clamp(
+			0px,
+			calc(0px + (112 - 0) * ((100vw - 320px) / (1440 - 320))),
+			112px
+		);
+}
+
+@media (max-width: 834px) {
+    .projects_title{
+        margin: 60px 0;
+    }
+}

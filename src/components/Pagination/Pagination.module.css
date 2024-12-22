@@ -1,0 +1,47 @@
+.pagination{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.numberBtn{
+    padding: 10px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #667085;
+    transition: all 0.3s;
+}
+
+.currentNumber{
+    color: 7F56D9;
+    background: #F9F5FF;
+}
+
+.sideBtn{
+    color: #667085;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+@media (max-width: 710px) {
+    .pagination{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

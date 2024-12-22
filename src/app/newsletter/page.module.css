@@ -1,0 +1,110 @@
+.newsletterPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(
+		0px,
+		calc(0px + (60 - 0) * ((100vw - 320px) / (1440 - 320))),
+		60px
+	);
+}
+
+.newsletter_titleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.newsletter_subtitle{
+    color: #7F56D9;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.newsletter_mainTitle{
+    font-size: clamp(
+		1.5rem,
+		calc(24px + (48 - 24) * ((100vw - 320px) / (1440 - 320))),
+		3rem
+	);
+    font-weight: 600;
+    text-wrap: nowrap;
+    margin: 0.75rem 0 1.5rem;
+}
+
+.newsletter_description{
+    font-size: clamp(
+		1rem,
+		calc(16px + (20 - 16) * ((100vw - 320px) / (1440 - 320))),
+		1.25rem
+	);
+    font-weight: 400;
+}
+
+.newsletter_inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 494px;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+.inputWrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.newsletter_input{
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #667085;
+    width: 100%;
+}
+
+.btn_subscribe{
+    padding: 0.75rem 1.25rem;
+    background: #7F56D9;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+}
+
+.input_subtitle{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--textColor);
+    text-align: left;
+    width: 100%;
+}
+
+.input_subtitle a{
+    color: var(--textColor);
+    text-decoration: dashed;
+}
+
+@media (max-width: 500px) {
+    .inputWrapper{
+        flex-direction: column;
+    }
+
+    .btn_subscribe{
+        width: 100%;
+    }
+
+    .input_subtitle{
+        text-align: center;
+    }
+}

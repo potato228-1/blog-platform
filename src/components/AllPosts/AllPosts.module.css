@@ -1,0 +1,34 @@
+.allPosts{
+    padding: 30px clamp(32px, calc(32px + (112 - 32) * ((100vw - 320px) / (1440 - 320))), 112px);
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.posts_container{
+    margin: 30px 0;
+
+    display: grid;
+    gap: 38px 32px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1280px) {
+    .posts_container{
+        gap: 24px 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .posts_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 710px) {
+    .posts_container{
+        grid-template-columns: 100%;
+    }
+}

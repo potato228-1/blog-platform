@@ -1,4 +1,4 @@
-.mainTitle {
+.title {
 	font-size: clamp(
 		3.5rem,
 		calc(0px + (243 - 0) * ((100vw - 320px) / (1440 - 320))),
@@ -6,7 +6,6 @@
 	);
 	font-weight: 700;
 	text-align: center;
-	text-transform: uppercase;
 	margin: 50px
 		clamp(
 			0px,
@@ -21,7 +20,7 @@
 }
 
 @media (max-width: 834px) {
-	.mainTitle {
+	.title {
 		margin: 50px 0 30px;
 	}
 }
